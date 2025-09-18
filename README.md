@@ -6,7 +6,7 @@ Tools to compute basic shear flow ($q_b$), the closed-section constant ($q_0$), 
 
 ## What this project does
 
-1) Builds panel segments along the airfoil midline: xm, ym, ds[, theta].
+1) Builds panel segments along the airfoil midline: $x_m$, $y_m$, $ds$, $\theta_{ds}$].
 
 2) Computes thin-plate geometric properties: area, centroid ($\bar{x}$, $\bar{y}$), and centroidal inertias ($I_{xx}$, $I_{yy}$, $I_{xy}$).
 
@@ -62,6 +62,7 @@ https://math.libretexts.org/Courses/Mount_Royal_University/Calculus_for_Scientis
 #### 3) Shear flow in thin-walled closed sections
 Formulation follows Bredt–Batho and the open/closed section development in Aircraft Structures for Engineering Students (T.H.G. Megson).
 
+$$q_s = -(\frac{S_xI_{xx}-S_yI_{xy}}{I_{xx}I_{yy}-I_{xy}^2}) \int_{0}^{s} txds -(\frac{S_yI_{yy}-S_xI_{xy}}{I_{xx}I_{yy}-I_{xy}^2}) \int_{0}^{s} tyds + q_{s,0} $$
 
 ## Limitations
 
